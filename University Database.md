@@ -148,7 +148,7 @@ Type "help" for help.
 university=# \i function.sql
 CREATE FUNCTION
 ```
-*Create the trigger*/
+*Create the trigger*
 ```bash
 university=# \q
 postgres@extrimis:~$ vi trigger.sql
