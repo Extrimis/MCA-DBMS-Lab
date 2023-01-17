@@ -69,13 +69,14 @@ select emp_name from employee where emp_name like 'S%';
 select d.dept_name,d.dept_id,count(e.emp_id) from department d left join employee e on  d.dept_id = e.dept_id group by d.dept_id;
 ```
 ```
-    dept_name     | dept_no | count 
-------------------+---------+-------
- IT Support       |       4 |     1
- System Engineer  |       2 |     1
- Software Testing |       1 |     2
- Sales            |       3 |     1
-(4 rows)
+ dept_name  | dept_id | count 
+------------+---------+-------
+ Marketing  |       4 |     0
+ HR         |       2 |     2
+ Finance    |       3 |     1
+ Operations |       5 |     0
+ IT         |       1 |     2
+(5 rows)
 ```
 
 
