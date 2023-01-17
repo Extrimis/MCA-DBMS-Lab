@@ -66,7 +66,7 @@ select emp_name from employee where emp_name like 'S%';
 
 **2. List the department name and department number along with number of employees working on each department.**
 ```sql
-select d.dept_name,d.dept_no,count(e.emp_id) from department d,employee e where d.dept_no = e.dept_no group by d.dept_no;
+select d.dept_name,d.dept_id,count(e.emp_id) from department d left join employee e on  d.dept_id = e.dept_id group by d.dept_id;
 ```
 ```
     dept_name     | dept_no | count 
