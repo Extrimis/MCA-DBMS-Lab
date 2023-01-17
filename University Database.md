@@ -89,16 +89,17 @@ select s.student_name,d.dept_name from student s,department d where s.dept_no=d.
 
 **2. List the department name and number of students in each department.**
 ```sql
-select d.dept_name,count(s.student_no) from department d,student s where s.dept_no=d.dept_no group by d.dept_no;
+select d.dept_name,count(s.student_no) from department d left join student s on s.dept_no=d.dept_no group by d.dept_no;
 ```
 ```
  dept_name | count 
 -----------+-------
  BCA       |     1
  BA        |     1
+ BBA       |     0
  MCA       |     2
  BCOM      |     1
-(4 rows)
+(5 rows)
 ```
 **3. List name of the student who was taught by a particular faculty.**
 ```sql
