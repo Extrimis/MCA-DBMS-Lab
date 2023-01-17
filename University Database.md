@@ -122,7 +122,7 @@ faculty_name
  Barry Allen
 (2 rows)
 ```
-**5. Create a trigger which will display a warning message whileyou entering age less than zero**
+**5. Create a trigger which will display a warning message while you entering age less than zero**
 
 *Create the function*
 ``` bash
